@@ -92,7 +92,7 @@
     \vbox to 0pt{%
      \vss
       \hbox{\sffamily\huge
-	\textbf{epl draft} %
+	\textbf{} %
       }%
        \vskip6ex
     }%
@@ -663,7 +663,7 @@
   \let\epl@pacsmissing\@empty
   \protected@xdef\epl@pacsset{\epl@pacsset\epl@pacs{#1}{#2}}%
 }
-\def\epl@pacsmissing{\hbox to\epl@pacsindent{*** Missing PACS ***\hss}\par}
+\def\epl@pacsmissing{\hbox to\epl@pacsindent{\hss}\par}
 \def\epl@pacsset{\epl@pacsmissing}
 \def\epl@pacs#1#2{%
   \leavevmode\hbox to\epl@pacsindent{{\scriptsize PACS}\hskip0.6em\texttt{#1}\hfill\ --\ }#2\par
